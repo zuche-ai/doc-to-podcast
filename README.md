@@ -13,9 +13,10 @@ A Python script that uses OpenAI's Whisper model to transcribe audio files and s
 ## Installation
 
 1. Clone or download this repository
-2. Install the required dependencies:
+2. Navigate to the scripts directory and install the required dependencies:
 
 ```bash
+cd scripts
 pip install -r requirements.txt
 ```
 
@@ -26,6 +27,7 @@ pip install -r requirements.txt
 Transcribe an audio file with the default settings:
 
 ```bash
+cd scripts
 python transcribe_audio.py audio.mp3
 ```
 
@@ -36,18 +38,21 @@ This will create a text file with the same name as your audio file (e.g., `audio
 Specify an output file:
 
 ```bash
+cd scripts
 python transcribe_audio.py audio.mp3 -o my_transcription.txt
 ```
 
 Use a different Whisper model:
 
 ```bash
+cd scripts
 python transcribe_audio.py audio.mp3 -m large
 ```
 
 Enable verbose output:
 
 ```bash
+cd scripts
 python transcribe_audio.py audio.mp3 -v
 ```
 
@@ -78,12 +83,15 @@ optional arguments:
 
 ```bash
 # Basic transcription
+cd scripts
 python transcribe_audio.py podcast.mp3
 
 # High-quality transcription with custom output
+cd scripts
 python transcribe_audio.py interview.wav -m large -o interview_transcript.txt
 
 # Quick transcription for short audio
+cd scripts
 python transcribe_audio.py voicemail.m4a -m tiny -v
 ```
 
